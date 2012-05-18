@@ -12,8 +12,10 @@ require("calendar3")
 require("vicious")
 
 -- {{{ Variable definitions
+local home = os.getenv("HOME")
+
 -- Themes define colours, icons, and wallpapers
-beautiful.init("/usr/share/awesome/themes/zenburn/theme.lua")
+beautiful.init(home .. "/.config/awesome/zenburn.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "konsole"
